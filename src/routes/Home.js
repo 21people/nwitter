@@ -28,9 +28,9 @@ const Home = ({ userObj }) => {
   //snapshot은 nweets컬랙션이 업데이트되든, 삭제되든 등등 변화가 있을때마다 작동해서 실시간으로 실행된다.
 
   return (
-    <div>
+    <div className="container">
       <NweetFactory userObj={userObj} />
-      <div>
+      <div style={{ marginTop: 30 }}>
         {nweets.map((nweet) => (
           <Nweet
             key={nweet.id}
